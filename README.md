@@ -1,4 +1,4 @@
-## Solution Design Document for Text-to-SQL with Simple RAG Framework
+## Solution Design Document for Text-to-SQL
 
 ### 1. Introduction
 This document outlines the solution design for implementing a Text-to-SQL query system using a Simple RAG Framework. The system leverages Langchain, OpenAI Embedding Model, Meta's FAISS Vector Database, Meta's Llama3.2 3B model, Ollama, and Python.
