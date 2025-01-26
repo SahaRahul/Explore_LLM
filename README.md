@@ -1,7 +1,7 @@
 ## Solution Design Document for Text-to-SQL
 
 ### 1. Introduction
-This document outlines the solution design for implementing a Text-to-SQL query system using a Simple RAG Framework. The system leverages Langchain, OpenAI Embedding Model, Meta's FAISS Vector Database, Meta's Llama3.2 3B model, Ollama, and Python.
+This document outlines the solution design for implementing a Text-to-SQL query system using a Simple RAG Framework. The system leverages Langchain, OpenAI Embedding Model, Meta's FAISS Vector Database, Meta's Llama3.2 3B model, OpenAI GPT 3.5 turbo, Ollama, LangChain and Python.
 
 ### 2. Objectives
 - Convert natural language text queries to SQL queries.
@@ -18,6 +18,8 @@ This document outlines the solution design for implementing a Text-to-SQL query 
 
 ### 4. System Architecture
 
+<image src="./SimpleRAG_architecture.svg"> </image>
+
 #### 4.1. Data Flow
 1. **User Input**: User provides a natural language query.
 2. **Text Embedding**: The query is converted into a vector using the OpenAI Embedding Model.
@@ -26,8 +28,7 @@ This document outlines the solution design for implementing a Text-to-SQL query 
 5. **SQL Generation**: Meta's Llama3.2 3B model generates the SQL query from the retrieved passages.
 6. **Response**: The result is returned to the user.
 
-#### 4.2. Components
-- **Natural Language Processing (NLP) Module**: Powered by Langchain to process user queries.
+#### 4.2. Components- **Natural Language Processing (NLP) Module**: Powered by Langchain to process user queries.
 - **Embedding Module**: Uses OpenAI Embedding Model to convert queries into vectors.
 - **Vector Database Module**: Uses Meta's FAISS for efficient vector search.
 - **RAG Framework Module**: Retrieves relevant documents for query generation.
