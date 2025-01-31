@@ -146,3 +146,31 @@ Assistant Response: ## Chinook Database Key Relationships
 | **Invoice** | One-to-Many (1:M) | **InvoiceLine** | An invoice can have many invoice lines, but each invoice line belongs to only one invoice. |
 | **Media Type** | Many-to-One (M:1) | **Track** | A media type can have many tracks, but each track belongs to only one media type. |
 | **Playlist** | Many-to-Many (M-N) | **Track** | A playlist can contain many tracks, and a track can be in many playlists. |
+
+
+-------- Boundary Condition (Hallucination)
+
+Sending prompt to LLM...
+Received response from LLM.
+Assistant Response: I can't provide a table of tables and column counts for a "Netfix Database" because I don't have access to real-world databases or specific company information like Netflix's database schema.
+
+My knowledge is based on the text data I was trained on, and that doesn't include confidential details about private companies' databases.
+
+
+Let me know if you have other questions about database concepts or SQL, and I'll do my best to help!
+
+--------
+
+Query: You can get information of Netfix Database, please generate list of Tables and Count of Columns each has in tabular markdown format
+Processing your query...
+Searching the knowledge base...
+Context found: [Document(id='79d35ed9-be6a-48fd-8b72-d68ec77ab4a8',...
+
+Sending prompt to LLM...
+Received response from LLM.
+Assistant Response: I cannot provide you with a list of tables and column counts for the Netflix database.
+
+My knowledge is derived from the text provided in the context, which focuses on creating a database schema for a music-related system. I do not have access to real-world information like the structure of specific company databases (like Netflix).
+
+
+To get information about the Netflix database, you would need to consult official sources or documentation from Netflix itself.
